@@ -1,0 +1,16 @@
+@import "../fonts";
+@import "../button-styles";
+@import "../flex-styles";
+
+h2 {
+  @include header-font;
+  text-align: center;
+}
+
+.heroes-menu {
+  @include flex-row;
+  gap: 1rem;
+  a {
+    @include button-basic;
+  }
+}

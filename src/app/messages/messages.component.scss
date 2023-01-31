@@ -1,0 +1,15 @@
+@import "../fonts";
+@import "../button-styles";
+@import "../flex-styles";
+
+div {
+  text-align: center;
+
+  h2 {
+    @include header-font;
+  }
+
+  button {
+    @include button-basic;
+  }
+}

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Josefin+Slab:wght@500;600&display=swap');
+
+@mixin header-font {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5rem;
+}
+
+@mixin button-font {
+  font-family: 'Josefin Slab', serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+@mixin second-font {
+  font-family: 'Josefin Slab', serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
