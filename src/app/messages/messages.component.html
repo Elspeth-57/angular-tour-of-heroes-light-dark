@@ -1,0 +1,12 @@
+<div *ngIf="messageService.messages.length"> <!-- only display this div if the messages array has messages in it -->
+  <h2>Messages</h2>
+  <!-- button uses event binding to call a function (property of class) on click.
+  The function is part of the MessageService that has been injected and assigned to a public property so it can be accessed here -->
+  <button type="button" class="clear" (click)="messageService.clear()">
+    Clear Messages
+  </button>
+  <!-- present the list of messages in repeating div elements using *ngFor repeater directive -->
+  <div *ngFor="let message of messageService.messages">
+    {{ message }}
+  </div>
+</div>
