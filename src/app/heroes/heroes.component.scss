@@ -1,0 +1,31 @@
+@import "../../assets/styles/base/__base";
+@import "../../assets/styles/elements/__elements";
+
+h2 {
+  @include section-heading;
+}
+
+div {
+  @include inputs-with-label;
+  button {
+    @include add-delete-hero($green);
+    @include button-text;
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+  button:hover {
+    @include add-delete-hero($dark-green);
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+}
+
+ul {
+  @include search-results;
+  button {
+    @include add-delete-hero($dark-red);
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-left: 1.5rem;
+  }
+}

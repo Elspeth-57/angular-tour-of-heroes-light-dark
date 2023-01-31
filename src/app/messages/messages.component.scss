@@ -1,24 +1,24 @@
-@import "../fonts";
-@import "../button-styles";
-@import "../flex-styles";
+@import "../../assets/styles/base/__base";
+@import "../../assets/styles/elements/__elements";
 
 div {
   text-align: center;
 
   h2 {
-    @include header-font;
+    @include section-heading;
   }
 
   button {
-    @include button-basic;
+    @include dashboard-favourites($blue);
+    @include button-text;
     margin-bottom: 2rem;
   }
   button:hover {
-    @include button-basic-hover;
+    @include dashboard-favourites($dark-blue);
   }
 
   div {
     margin-top: 0.5rem;
-    @include second-font;
+    @include secondary-text;
   }
 }

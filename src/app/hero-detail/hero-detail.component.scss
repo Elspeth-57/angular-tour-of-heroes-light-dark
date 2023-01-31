@@ -1,0 +1,28 @@
+@import "../../assets/styles/base/__base";
+@import "../../assets/styles/elements/__elements";
+
+div {
+  h2 {
+    @include section-heading;
+  }
+  div {
+    @include secondary-text;
+    @include inputs-with-label;
+  }
+}
+
+#back-save {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  button {
+    @include dashboard-favourites($green);
+    @include button-text;
+  }
+
+  button:hover {
+    @include dashboard-favourites($dark-green);
+  }
+}

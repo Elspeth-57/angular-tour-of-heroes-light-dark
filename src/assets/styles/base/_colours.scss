@@ -7,10 +7,20 @@ $dark-grey: #7c7c7c;
 $red: #ff2d00;
 $dark-red: #c30000;
 
+$blue: #0063E1;
+$dark-blue: #0049A7;
+
+$green: #00CA09;
+$dark-green: #009006;
+
 // Colour matches (background colour: text colour)
 $colour-matches: (
   $light-grey: $black,
   $dark-grey: $white,
   $red: $white,
   $dark-red: $white,
+  $blue: $white,
+  $dark-blue: $white,
+  $green: $white,
+  $dark-green: $white
 );
