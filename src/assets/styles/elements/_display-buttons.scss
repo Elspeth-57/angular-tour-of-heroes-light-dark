@@ -1,0 +1,33 @@
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+@mixin navbar($background-colour) {
+  @extend .flex-row;
+  justify-content: flex-start;
+  background-color: $background-colour;
+}
+
+@mixin favourite-heroes {
+  @extend .flex-row;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+@mixin search-results {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.7rem;
+  list-style-type: none;
+  li {
+    a {
+      text-decoration: none;
+      color: $red;
+      @include secondary-text;
+    }
+  }
+}

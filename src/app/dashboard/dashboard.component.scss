@@ -1,16 +1,18 @@
-@import "../fonts";
-@import "../button-styles";
-@import "../flex-styles";
+@import "../../assets/styles/base/__base";
+@import "../../assets/styles/elements/__elements";
 
 h2 {
-  @include header-font;
-  text-align: center;
+  @include section-heading;
 }
 
 .heroes-menu {
-  @include flex-row;
-  gap: 1rem;
+  @include favourite-heroes;
   a {
-    @include button-basic;
+    @include dashboard-favourites($red);
+    @include button-text;
+  }
+  a:hover {
+    @include dashboard-favourites($dark-red);
+    @include button-text;
   }
 }

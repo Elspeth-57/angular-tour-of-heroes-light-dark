@@ -1,0 +1,20 @@
+.base-button {
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin navigation-button($background-colour) {
+  @extend .base-button;
+  background-color: $background-colour;
+  color: map-get($colour-matches, $background-colour);
+}
+
+@mixin dashboard-favourites($background-colour) {
+  @extend .base-button;
+  background-color: $background-colour;
+  color: map-get($colour-matches, $background-colour);
+  border-radius: 10px;
+}

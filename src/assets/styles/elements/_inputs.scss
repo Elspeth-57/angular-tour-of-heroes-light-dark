@@ -1,0 +1,14 @@
+@mixin inputs-with-label {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  background-color: $red;
+  label {
+    @include secondary-text;
+  }
+  input {
+    @include secondary-text;
+    width: 20rem;
+  }
+}

@@ -1,0 +1,16 @@
+// Colours
+$black: #000000;
+$white: #ffffff;
+$light-grey: #c2c2c2;
+$dark-grey: #7c7c7c;
+
+$red: #ff2d00;
+$dark-red: #c30000;
+
+// Colour matches (background colour: text colour)
+$colour-matches: (
+  $light-grey: $black,
+  $dark-grey: $white,
+  $red: $white,
+  $dark-red: $white,
+);

@@ -1,32 +1,13 @@
-@import "../fonts";
-@import "../flex-styles";
+@import "../../assets/styles/base/__base";
+@import "../../assets/styles/elements/__elements";
 
-#search-component {
-  @include flex-column;
-
-  #search-inputs {
-    @include flex-row;
-    @include second-font;
-    text-align: center;
-    margin-top: 2.5rem;
-    gap: 1.5rem;
-
-    #search-box {
-      width: 20rem;
-    }
+.search-component {
+  .search-inputs {
+    @include inputs-with-label;
   }
 
   .search-result {
-    list-style-type: none;
-    @include flex-column;
-    gap: 0.7rem;
-    li {
-      @include second-font;
-      a {
-        text-decoration: none;
-        color: black;
-      }
-    }
+    @include search-results;
   }
 }
 

@@ -11,5 +11,14 @@ div {
 
   button {
     @include button-basic;
+    margin-bottom: 2rem;
+  }
+  button:hover {
+    @include button-basic-hover;
+  }
+
+  div {
+    margin-top: 0.5rem;
+    @include second-font;
   }
 }

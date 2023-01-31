@@ -1,17 +1,18 @@
-@import "flex-styles";
-@import "button-styles";
-@import "fonts";
+@import "../assets/styles/base/__base";
+@import "../assets/styles/elements/__elements";
 
 h1 {
-  @include header-font;
-  font-size: 4rem;
-  text-align: center;
+  @include main-page-heading;
 }
 
 nav {
-  @include flex-row;
-  gap: 1rem;
+  @include navbar($dark-grey);
   a {
-    @include button-basic;
+    @include navigation-button($dark-grey);
+    @include button-text;
+  }
+  a:hover, .current-page {
+    @include navigation-button($light-grey);
+    @include button-text;
   }
 }
