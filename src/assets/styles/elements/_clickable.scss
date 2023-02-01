@@ -6,22 +6,78 @@
   cursor: pointer;
 }
 
-@mixin navigation-button($background-colour) {
-  @extend .base-button;
-  background-color: $background-colour;
-  color: map-get($colour-matches, $background-colour);
+@mixin navigation-button {
+  a {
+    @extend .base-button;
+    @include button-text;
+    background-color: $button-normal;
+    color: map-get($colour-matches, $button-normal);
+  }
+  a:hover {
+    @extend .base-button;
+    @include button-text;
+    background-color: $button-hover;
+    color: map-get($colour-matches, $button-hover);
+  }
+  .current-page {
+    @extend .base-button;
+    @include button-text;
+    background-color: $navbar-colour;
+    color: map-get($colour-matches, $navbar-colour);
+  }
 }
 
-@mixin dashboard-favourites($background-colour) {
-  @extend .base-button;
-  background-color: $background-colour;
-  color: map-get($colour-matches, $background-colour);
-  border-radius: 10px;
+@mixin dashboard-favourites {
+  a {
+    @extend .base-button;
+    @include button-text;
+    border-radius: 10px;
+    background-color: $button-normal;
+    color: map-get($colour-matches, $button-normal);
+  }
+  a:hover {
+    @extend .base-button;
+    @include button-text;
+    border-radius: 10px;
+    background-color: $button-hover;
+    color: map-get($colour-matches, $button-hover);
+  }
 }
 
-@mixin add-delete-hero($background-colour) {
-  @extend .base-button;
-  background-color: $background-colour;
-  color: map-get($colour-matches, $background-colour);
-  border-radius: 50%;
+@mixin message-button {
+  button {
+    @extend .base-button;
+    @include button-text;
+    border-radius: 10px;
+    background-color: $button-normal;
+    color: map-get($colour-matches, $button-normal);
+  }
+  button:hover {
+    @extend .base-button;
+    @include button-text;
+    border-radius: 10px;
+    background-color: $button-hover;
+    color: map-get($colour-matches, $button-hover);
+  }
+}
+
+@mixin add-delete-hero {
+  button {
+    @extend .base-button;
+    @include button-text;
+    border-radius: 50%;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: $button-normal;
+    color: map-get($colour-matches, $button-normal);
+  }
+  button:hover {
+    @extend .base-button;
+    @include button-text;
+    border-radius: 50%;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: $button-hover;
+    color: map-get($colour-matches, $button-hover);
+  }
 }

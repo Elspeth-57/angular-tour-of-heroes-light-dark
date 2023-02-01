@@ -4,10 +4,10 @@
   align-items: center;
 }
 
-@mixin navbar($background-colour) {
+@mixin navbar {
   @extend .flex-row;
   justify-content: flex-start;
-  background-color: $background-colour;
+  background-color: $navbar-colour;
 }
 
 @mixin favourite-heroes {
@@ -30,11 +30,10 @@
     flex-flow: row;
     a {
       text-decoration: none;
-      color: $black;
       @include secondary-text;
     }
     a:hover {
-      color: $dark-red;
+      color: $highlight-text;
     }
   }
 }

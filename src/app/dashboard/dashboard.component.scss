@@ -1,18 +1,13 @@
 @import "../../assets/styles/base/__base";
 @import "../../assets/styles/elements/__elements";
 
-h2 {
-  @include section-heading;
-}
-
-.heroes-menu {
-  @include favourite-heroes;
-  a {
-    @include dashboard-favourites($red);
-    @include button-text;
+div {
+  h2 {
+    @include section-heading;
   }
-  a:hover {
-    @include dashboard-favourites($dark-red);
-    @include button-text;
+
+  .heroes-menu {
+    @include favourite-heroes;
+    @include dashboard-favourites;
   }
 }

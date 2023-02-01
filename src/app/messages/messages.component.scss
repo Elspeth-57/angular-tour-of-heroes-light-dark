@@ -8,14 +8,7 @@ div {
     @include section-heading;
   }
 
-  button {
-    @include dashboard-favourites($blue);
-    @include button-text;
-    margin-bottom: 2rem;
-  }
-  button:hover {
-    @include dashboard-favourites($dark-blue);
-  }
+  @include message-button;
 
   div {
     margin-top: 0.5rem;

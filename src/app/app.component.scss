@@ -1,18 +1,16 @@
 @import "../assets/styles/base/__base";
 @import "../assets/styles/elements/__elements";
 
-h1 {
-  @include main-page-heading;
-}
+div {
+  background-color: $background;
+  color: $text;
 
-nav {
-  @include navbar($dark-grey);
-  a {
-    @include navigation-button($dark-grey);
-    @include button-text;
+  h1 {
+    @include main-page-heading;
   }
-  a:hover, .current-page {
-    @include navigation-button($light-grey);
-    @include button-text;
+
+  nav {
+    @include navbar;
+    @include navigation-button;
   }
 }

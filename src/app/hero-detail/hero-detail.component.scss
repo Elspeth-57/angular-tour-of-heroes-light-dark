@@ -7,6 +7,8 @@ div {
   }
   div {
     @include secondary-text;
+  }
+  div {
     @include inputs-with-label;
   }
 }
@@ -17,12 +19,5 @@ div {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  button {
-    @include dashboard-favourites($green);
-    @include button-text;
-  }
-
-  button:hover {
-    @include dashboard-favourites($dark-green);
-  }
+  @include message-button;
 }

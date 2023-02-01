@@ -7,25 +7,13 @@ h2 {
 
 div {
   @include inputs-with-label;
-  button {
-    @include add-delete-hero($green);
-    @include button-text;
-    font-size: 1rem;
-    padding: 0.7rem;
-  }
-  button:hover {
-    @include add-delete-hero($dark-green);
-    font-size: 1rem;
-    padding: 0.7rem;
-  }
+  @include add-delete-hero;
 }
 
 ul {
   @include search-results;
+  @include add-delete-hero;
   button {
-    @include add-delete-hero($dark-red);
-    font-size: 1rem;
-    padding: 0.5rem;
-    margin-left: 1.5rem;
+    margin-left: 1.4rem;
   }
 }
