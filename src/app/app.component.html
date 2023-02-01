@@ -1,9 +1,11 @@
-<div>
+<div [class.dark-theme]="darkTheme" [class.light-theme]="!darkTheme">
   <h1>{{ title }}</h1> <!-- interpolation binding -->
   <nav>
     <!-- when an anchor is clicked the routerLink attribute will change the application url to accommodate this path -->
     <a routerLink="/dashboard" (click)="changeCurrentPage('dashboard')" [class.current-page]="currentPage === 'dashboard'">Dashboard</a>
     <a routerLink="/heroes" (click)="changeCurrentPage('heroes')" [class.current-page]="currentPage === 'heroes'">Heroes</a>
+    <button type="button" (click)="changeTheme()">Theme</button>
+    {{ darkTheme }}
   </nav>
 
   <router-outlet></router-outlet> <!-- use a router directive that tells the router where to display routed views -->

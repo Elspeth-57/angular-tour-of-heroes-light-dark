@@ -3,11 +3,6 @@ $black: #000000;
 $white: #ffffff;
 $red: #FF0000;
 
-// Light theme colours
-
-// background
-$background: $white;
-
 // navbar
 $navbar-colour: #FFCB80;
 
@@ -15,15 +10,12 @@ $navbar-colour: #FFCB80;
 $button-normal: #FF9600;
 $button-hover: #BF7100;
 
-// text
-$text: $black;
 $highlight-text: $red;
 
 
 // Colour matches (background colour: text colour)
 $colour-matches: (
-  $button-normal: $text,
-  $button-hover: $text,
-  $navbar-colour: $text,
-  $background: $text,
+  $button-normal: $black,
+  $button-hover: $black,
+  $navbar-colour: $black,
 );

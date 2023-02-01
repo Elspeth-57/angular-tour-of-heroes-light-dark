@@ -9,11 +9,17 @@ export class AppComponent implements OnInit{
   title = 'Tour of Heroes';
   currentPage?: string;
 
+  darkTheme = false;
+
   ngOnInit(): void {
     this.currentPage = 'dashboard';
   }
 
   changeCurrentPage(newPage: string): void {
     this.currentPage = newPage;
+  }
+
+  changeTheme(): void {
+    this.darkTheme = !this.darkTheme;
   }
 }
