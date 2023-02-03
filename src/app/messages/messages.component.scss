@@ -3,6 +3,7 @@
 
 div.light-theme {
   @import "../../assets/styles/themes/light-theme";
+  @include transition;
   text-align: center;
 
   h2 {
@@ -23,6 +24,7 @@ div.light-theme {
 
 div.dark-theme {
   @import "../../assets/styles/themes/dark-theme";
+  @include transition;
   text-align: center;
 
   h2 {

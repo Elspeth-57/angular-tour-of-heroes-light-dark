@@ -17,3 +17,8 @@ $colour-matches: (
   $navbar-colour: $black,
   $theme-button: $black,
 ) !global;
+
+// transition time
+@mixin transition {
+  transition: 0.5s linear;
+}

@@ -3,6 +3,7 @@
 
 div.light-theme {
   @import "../../assets/styles/themes/light-theme";
+  @include transition;
   h2 {
     @include section-heading;
   }
@@ -14,6 +15,7 @@ div.light-theme {
 
 div.dark-theme {
   @import "../../assets/styles/themes/dark-theme";
+  @include transition;
   h2 {
     @include section-heading;
   }

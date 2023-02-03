@@ -8,13 +8,12 @@ import { ThemeService } from './theme.service';
 })
 export class AppComponent implements OnInit{
   title = 'Tour of Heroes';
-  currentPage?: string;
+  currentPage = 'dashboard';
 
   constructor(public theme: ThemeService) {
   }
 
   ngOnInit(): void {
-    this.currentPage = 'dashboard';
   }
 
   changeCurrentPage(newPage: string): void {
