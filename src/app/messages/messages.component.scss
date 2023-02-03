@@ -12,13 +12,12 @@ div.light-theme {
 
   @include message-button;
 
-  .gap {
-    height: 1rem;
-  }
-
   div {
-    margin-top: 0.5rem;
-    @include secondary-text;
+    margin: 30px 0 50px 0;
+    div {
+      margin: 10px 0 0 0;
+      @include secondary-text;
+    }
   }
 }
 
@@ -33,13 +32,12 @@ div.dark-theme {
 
   @include message-button;
 
-  .gap {
-    height: 1rem;
-  }
-
   div {
-    margin-top: 0.5rem;
-    @include secondary-text;
+    margin: 30px 0 50px 0;
+    div {
+      margin: 10px 0 0 0;
+      @include secondary-text;
+    }
   }
 }
 

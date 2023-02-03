@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ThemeService } from './theme.service';
+import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +10,22 @@ import { ThemeService } from './theme.service';
 })
 export class AppComponent implements OnInit{
   title = 'Tour of Heroes';
-  currentPage = 'dashboard';
+  currentPage?: string;
 
-  constructor(public theme: ThemeService) {
+  constructor(public theme: ThemeService, private location: Location, private router: Router) {
   }
 
   ngOnInit(): void {
+    const currentPath = this.location.path();
+    if (currentPath === '/dashboard') {
+      this.currentPage = 'dashboard';
+    } else if (currentPath === '/heroes') {
+      this.currentPage = 'heroes';
+    } else {
+      this.currentPage = 'dashboard';
+      // this.location.go('/dashboard');
+      const promise = this.router.navigateByUrl('/dashboard');
+    }
   }
 
   changeCurrentPage(newPage: string): void {
