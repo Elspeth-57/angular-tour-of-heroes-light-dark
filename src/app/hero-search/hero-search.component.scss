@@ -2,3 +2,22 @@
 @import "../../assets/styles/elements/__elements";
 
 
+div#search-component.light-theme {
+  @import "../../assets/styles/themes/light-theme";
+  #search-inputs {
+    @include inputs-with-label;
+  }
+  ul.search-result {
+    @include search-results;
+  }
+}
+
+div#search-component.dark-theme {
+  @import "../../assets/styles/themes/dark-theme";
+  #search-inputs {
+    @include inputs-with-label;
+  }
+  ul.search-result {
+    @include search-results;
+  }
+}

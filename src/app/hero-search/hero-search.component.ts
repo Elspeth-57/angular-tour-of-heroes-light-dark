@@ -7,6 +7,7 @@ import {
 
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
+import { ThemeService } from '../theme.service';
 
 @Component({
   selector: 'app-hero-search',
@@ -17,7 +18,7 @@ export class HeroSearchComponent implements OnInit {
   heroes$!: Observable<Hero[]>; // the $ shows this is an Observable - this property is only accessed in the template
   private searchTerms = new Subject<string>(); // a subject is a different type of Observable
 
-  constructor(private heroService: HeroService) { }
+  constructor(private heroService: HeroService, public theme: ThemeService) { }
 
   // Push a search term into the observable stream.
   search(term: string): void {

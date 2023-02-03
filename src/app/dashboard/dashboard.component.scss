@@ -3,8 +3,22 @@
 
 div.light-theme {
   @import "../../assets/styles/themes/light-theme";
+  h2 {
+    @include section-heading;
+  }
+  .heroes-menu {
+    @include favourite-heroes;
+    @include dashboard-favourites;
+  }
 }
 
 div.dark-theme {
   @import "../../assets/styles/themes/dark-theme";
+  h2 {
+    @include section-heading;
+  }
+  .heroes-menu {
+    @include favourite-heroes;
+    @include dashboard-favourites;
+  }
 }

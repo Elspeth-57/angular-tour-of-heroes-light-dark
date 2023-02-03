@@ -39,8 +39,8 @@
     @extend .base-button;
     @include button-text;
     border-radius: 10px;
-    background-color: $nav-button-normal;
-    color: map-get($colour-matches, $nav-button-normal);
+    background-color: $navbar-colour;
+    color: map-get($colour-matches, $navbar-colour);
   }
 }
 
@@ -56,8 +56,8 @@
     @extend .base-button;
     @include button-text;
     border-radius: 10px;
-    background-color: $nav-button-normal;
-    color: map-get($colour-matches, $nav-button-normal);
+    background-color: $navbar-colour;
+    color: map-get($colour-matches, $navbar-colour);
   }
 }
 
