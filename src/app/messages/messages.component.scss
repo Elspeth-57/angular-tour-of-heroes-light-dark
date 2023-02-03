@@ -12,7 +12,7 @@ div.light-theme {
 
   @include message-button;
 
-  div::before {
+  .gap {
     height: 1rem;
   }
 

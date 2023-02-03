@@ -5,6 +5,7 @@
   <button type="button" class="clear" (click)="messageService.clear()">
     Clear Messages
   </button>
+  <div class="gap"></div>
   <!-- present the list of messages in repeating div elements using *ngFor repeater directive -->
   <div *ngFor="let message of messageService.messages">
     {{ message }}
