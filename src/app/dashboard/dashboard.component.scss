@@ -1,13 +1,10 @@
 @import "../../assets/styles/base/__base";
 @import "../../assets/styles/elements/__elements";
 
-div {
-  h2 {
-    @include section-heading;
-  }
+div.light-theme {
+  @import "../../assets/styles/themes/light-theme";
+}
 
-  .heroes-menu {
-    @include favourite-heroes;
-    @include dashboard-favourites;
-  }
+div.dark-theme {
+  @import "../../assets/styles/themes/dark-theme";
 }

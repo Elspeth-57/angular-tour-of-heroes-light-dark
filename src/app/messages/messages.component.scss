@@ -1,7 +1,8 @@
 @import "../../assets/styles/base/__base";
 @import "../../assets/styles/elements/__elements";
 
-div {
+div.light-theme {
+  @import "../../assets/styles/themes/light-theme";
   text-align: center;
 
   h2 {
@@ -9,6 +10,30 @@ div {
   }
 
   @include message-button;
+
+  .gap {
+    height: 1rem;
+  }
+
+  div {
+    margin-top: 0.5rem;
+    @include secondary-text;
+  }
+}
+
+div.dark-theme {
+  @import "../../assets/styles/themes/dark-theme";
+  text-align: center;
+
+  h2 {
+    @include section-heading;
+  }
+
+  @include message-button;
+
+  .gap {
+    height: 1rem;
+  }
 
   div {
     margin-top: 0.5rem;

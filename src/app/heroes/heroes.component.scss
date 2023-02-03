@@ -1,19 +1,3 @@
 @import "../../assets/styles/base/__base";
 @import "../../assets/styles/elements/__elements";
 
-h2 {
-  @include section-heading;
-}
-
-div {
-  @include inputs-with-label;
-  @include add-delete-hero;
-}
-
-ul {
-  @include search-results;
-  @include add-delete-hero;
-  button {
-    margin-left: 1.4rem;
-  }
-}

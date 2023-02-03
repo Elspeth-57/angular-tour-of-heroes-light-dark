@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemeService } from './theme.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,8 @@ export class AppComponent implements OnInit{
   title = 'Tour of Heroes';
   currentPage?: string;
 
-  darkTheme = false;
+  constructor(public theme: ThemeService) {
+  }
 
   ngOnInit(): void {
     this.currentPage = 'dashboard';
@@ -17,9 +19,5 @@ export class AppComponent implements OnInit{
 
   changeCurrentPage(newPage: string): void {
     this.currentPage = newPage;
-  }
-
-  changeTheme(): void {
-    this.darkTheme = !this.darkTheme;
   }
 }

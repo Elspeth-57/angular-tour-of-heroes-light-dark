@@ -1,23 +1,9 @@
 @import "../assets/styles/base/__base";
 @import "../assets/styles/elements/__elements";
 
-div.dark-theme {
-  @import "../assets/styles/themes/dark-theme";
-  background-color: $background;
-  color: $text;
-
-  h1 {
-    @include main-page-heading;
-  }
-
-  nav {
-    @include navbar;
-    @include navigation-button;
-  }
-}
-
 div.light-theme {
   @import "../assets/styles/themes/light-theme";
+  padding: 2rem;
   background-color: $background;
   color: $text;
 
@@ -27,6 +13,29 @@ div.light-theme {
 
   nav {
     @include navbar;
-    @include navigation-button;
+    .nav-buttons {
+      @include navigation-button;
+    }
+    @include theme-button;
   }
 }
+
+div.dark-theme {
+  @import "../assets/styles/themes/dark-theme";
+  padding: 2rem;
+  background-color: $background;
+  color: $text;
+
+  h1 {
+    @include main-page-heading;
+  }
+
+  nav {
+    @include navbar;
+    .nav-buttons {
+      @include navigation-button;
+    }
+    @include theme-button;
+  }
+}
+

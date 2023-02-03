@@ -3,19 +3,14 @@ $black: #000000;
 $white: #ffffff;
 $red: #FF0000;
 
-// navbar
-$navbar-colour: #FFCB80;
+// https://colorhunt.co/palette/ffd4d4ffffe8cde990aacb73
+$peach: #FFD4D4;
+$cream: #FFFFE8;
+$light-green: #CDE990;
+$green: #AACB73;
 
-// buttons
-$button-normal: #FF9600;
-$button-hover: #BF7100;
-
-$highlight-text: $red;
-
-
-// Colour matches (background colour: text colour)
-$colour-matches: (
-  $button-normal: $black,
-  $button-hover: $black,
-  $navbar-colour: $black,
-);
+//https://colorhunt.co/palette/261c2c3e2c415c527f6e85b2
+$dark-purple: #261c2c;
+$purple: #3e2c41;
+$lilac: #5c527f;
+$blue: #6e85b2;

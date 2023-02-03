@@ -1,13 +1,4 @@
 @import "../../assets/styles/base/__base";
 @import "../../assets/styles/elements/__elements";
 
-#search-component {
-  #search-inputs {
-    @include inputs-with-label;
-  }
-
-  .search-result {
-    @include search-results;
-  }
-}
 
