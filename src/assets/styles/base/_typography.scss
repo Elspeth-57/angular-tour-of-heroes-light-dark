@@ -10,6 +10,8 @@ $font-family-josefin-slab: 'Josefin Slab', serif;
   font-size: 4rem;
   text-align: center;
   color: $text;
+  margin: 0;
+  padding: 2rem 0 3rem 0;
 }
 
 @mixin section-heading {

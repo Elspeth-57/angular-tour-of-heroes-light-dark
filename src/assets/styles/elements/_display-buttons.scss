@@ -8,8 +8,6 @@
   @extend .flex-row;
   justify-content: space-between;
   background-color: $navbar-colour;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 @mixin favourite-heroes {
