@@ -4,6 +4,7 @@
   padding: 1rem;
   border: none;
   cursor: pointer;
+  border-radius: 15px;
 }
 
 @mixin navigation-button {
@@ -31,14 +32,12 @@
   a {
     @extend .base-button;
     @include button-text;
-    border-radius: 10px;
     background-color: $nav-button-normal;
     color: map-get($colour-matches, $nav-button-normal);
   }
   a:hover {
     @extend .base-button;
     @include button-text;
-    border-radius: 10px;
     background-color: $navbar-colour;
     color: map-get($colour-matches, $navbar-colour);
   }
@@ -48,14 +47,12 @@
   button {
     @extend .base-button;
     @include button-text;
-    border-radius: 10px;
     background-color: $nav-button-normal;
     color: map-get($colour-matches, $nav-button-normal);
   }
   button:hover {
     @extend .base-button;
     @include button-text;
-    border-radius: 10px;
     background-color: $navbar-colour;
     color: map-get($colour-matches, $navbar-colour);
   }
@@ -65,18 +62,18 @@
   button {
     @extend .base-button;
     @include button-text;
-    border-radius: 10px;
+    display: flex;
     font-size: 1rem;
-    padding: 10px;
+    padding: 7px;
     background-color: $nav-button-normal;
     color: map-get($colour-matches, $nav-button-normal);
   }
   button:hover {
     @extend .base-button;
     @include button-text;
-    border-radius: 10px;
+    display: flex;
     font-size: 1rem;
-    padding: 10px;
+    padding: 7px;
     background-color: $navbar-colour;
     color: map-get($colour-matches, $navbar-colour);
   }

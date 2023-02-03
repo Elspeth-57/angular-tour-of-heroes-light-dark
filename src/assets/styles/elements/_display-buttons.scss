@@ -9,6 +9,7 @@
   justify-content: space-between;
   background-color: $navbar-colour;
   height: 53px;
+  border-radius: 15px;
 }
 
 @mixin favourite-heroes {

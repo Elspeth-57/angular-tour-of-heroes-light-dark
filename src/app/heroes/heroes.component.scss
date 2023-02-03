@@ -1,6 +1,10 @@
 @import "../../assets/styles/base/__base";
 @import "../../assets/styles/elements/__elements";
 
+.material-symbols-outlined {
+  font-size: 18px;
+}
+
 div.light-theme {
   @import "../../assets/styles/themes/light-theme";
   @include transition;
