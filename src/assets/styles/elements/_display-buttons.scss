@@ -33,9 +33,11 @@
     a {
       text-decoration: none;
       @include secondary-text;
+      margin-right: 1.5rem;
     }
     a:hover {
       color: $highlight-text;
     }
+    @include add-delete-hero;
   }
 }

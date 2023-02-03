@@ -65,20 +65,20 @@
   button {
     @extend .base-button;
     @include button-text;
-    border-radius: 50%;
+    border-radius: 10px;
     font-size: 1rem;
     padding: 10px;
-    //background-color: $nav-button-normal;
-    //color: map-get($colour-matches, $nav-button-normal);
+    background-color: $nav-button-normal;
+    color: map-get($colour-matches, $nav-button-normal);
   }
   button:hover {
     @extend .base-button;
     @include button-text;
-    border-radius: 50%;
+    border-radius: 10px;
     font-size: 1rem;
     padding: 10px;
-    //background-color: $nav-button-normal;
-    //color: map-get($colour-matches, $nav-button-normal);
+    background-color: $navbar-colour;
+    color: map-get($colour-matches, $navbar-colour);
   }
 }
 

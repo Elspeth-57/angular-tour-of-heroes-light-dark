@@ -3,6 +3,7 @@ import { Hero } from '../hero';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { HeroService } from '../hero.service';
+import { ThemeService } from '../theme.service';
 
 @Component({
   selector: 'app-hero-detail',
@@ -15,7 +16,8 @@ export class HeroDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute, // property to hold information about the route to the current component
     private location: Location, // Angular service with interacting with browser
-    private heroService: HeroService // property to hold injected service to get Heroes array in asynchronous way
+    private heroService: HeroService, // property to hold injected service to get Heroes array in asynchronous way
+    public theme: ThemeService
   ) { }
 
   /**
