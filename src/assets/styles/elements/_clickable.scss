@@ -86,6 +86,11 @@
   button {
     @extend .base-button;
     @include button-text;
+    padding: 0 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: $theme-button;
     color: map-get($colour-matches, $theme-button);
   }

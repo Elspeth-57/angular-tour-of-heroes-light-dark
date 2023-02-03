@@ -1,6 +1,11 @@
 @import "../assets/styles/base/__base";
 @import "../assets/styles/elements/__elements";
 
+.material-symbols-outlined {
+  padding: 0;
+  font-size: 40px;
+}
+
 div.light-theme {
   @import "../assets/styles/themes/light-theme";
   @include transition;
@@ -46,4 +51,3 @@ div.dark-theme {
     @include theme-button;
   }
 }
-

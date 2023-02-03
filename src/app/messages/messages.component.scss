@@ -12,7 +12,7 @@ div.light-theme {
 
   @include message-button;
 
-  .gap {
+  div::before {
     height: 1rem;
   }
 
@@ -42,3 +42,4 @@ div.dark-theme {
     @include secondary-text;
   }
 }
+

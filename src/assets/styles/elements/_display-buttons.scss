@@ -8,6 +8,7 @@
   @extend .flex-row;
   justify-content: space-between;
   background-color: $navbar-colour;
+  height: 53px;
 }
 
 @mixin favourite-heroes {
