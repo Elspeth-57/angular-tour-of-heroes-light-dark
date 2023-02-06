@@ -9,8 +9,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss'],
   // tslint:disable-next-line:no-host-metadata-property
   host: {
-    '[class.light-theme]': '!this.theme.darkTheme',
-    '[class.dark-theme]': 'this.theme.darkTheme'
+    '[class.light-theme]': 'this.theme.themeName === "light"',
+    '[class.dark-theme]': 'this.theme.themeName === "dark"',
+    '[class.green-theme]': 'this.theme.themeName === "green"'
   }
 })
 export class AppComponent implements OnInit{

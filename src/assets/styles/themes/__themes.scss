@@ -28,4 +28,19 @@
     // theme button colour
     --theme-button: #{$blue};
   }
+
+  :host-context(.green-theme) {
+    // main background
+    --background: #{$pale-turquoise};
+    // text
+    --text: #{$black};
+    --highlight-text: #{$red};
+
+    // navbar and button colours
+    --navbar-colour: #{$turquoise};
+    --nav-button-normal: #{$green-blue};
+
+    // theme button colour
+    --theme-button: #{$sandy};
+  }
 }

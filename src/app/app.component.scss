@@ -4,11 +4,6 @@
 
 @include theme;
 
-.material-symbols-outlined {
-  padding: 0 5px;
-  font-size: 40px;
-}
-
 .app-component {
   padding: 1rem;
   min-height: 100vh;
@@ -26,6 +21,5 @@
     .nav-buttons {
       @include navigation-button;
     }
-    @include theme-button;
   }
 }

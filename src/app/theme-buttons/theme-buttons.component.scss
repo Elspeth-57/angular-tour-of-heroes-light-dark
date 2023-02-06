@@ -1,0 +1,20 @@
+@import "../../assets/styles/base/__base";
+@import "../../assets/styles/elements/__elements";
+
+:host {
+  height: 100%;
+}
+
+.material-symbols-outlined {
+  padding: 0 5px;
+  font-size: 40px;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  @include theme-button;
+}

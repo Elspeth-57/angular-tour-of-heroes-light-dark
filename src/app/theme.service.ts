@@ -5,9 +5,9 @@ import { Injectable } from '@angular/core';
 })
 export class ThemeService {
 
-  darkTheme = false;
+  themeName = 'light';
 
-  changeTheme(): void {
-    this.darkTheme = !this.darkTheme;
+  changeTheme(newTheme: 'light'|'dark'|'green'): void {
+    this.themeName = newTheme;
   }
 }
