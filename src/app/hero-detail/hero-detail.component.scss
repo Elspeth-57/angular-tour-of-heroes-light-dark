@@ -1,0 +1,20 @@
+@import "../../assets/styles/base/__base";
+@import "../../assets/styles/elements/__elements";
+
+div {
+  div {
+    h2 {
+      @include section-heading;
+    }
+    div {
+      @include secondary-text;
+    }
+    div {
+      @include inputs-with-label;
+    }
+  }
+  div#back-save {
+    @include favourite-heroes;
+    @include message-button;
+  }
+}

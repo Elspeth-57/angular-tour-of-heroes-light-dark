@@ -1,10 +1,12 @@
-<h2>Top Heroes</h2>
-<div class="heroes-menu">
-  <!-- each hero in the heroes array creates a link (a = anchor) showing their name
-       The link sets the url path using the hero.id, this is interpolation binding -->
-  <a *ngFor="let hero of heroes" routerLink="/detail/{{ hero.id}}">
-    {{hero.name}}
-  </a>
-</div>
+<div>
+  <h2>Top Heroes</h2>
+  <div class="heroes-menu">
+    <!-- each hero in the heroes array creates a link (a = anchor) showing their name
+         The link sets the url path using the hero.id, this is interpolation binding -->
+    <a *ngFor="let hero of heroes" routerLink="/detail/{{ hero.id}}">
+      {{hero.name}}
+    </a>
+  </div>
 
-<app-hero-search></app-hero-search>
+  <app-hero-search></app-hero-search>
+</div>

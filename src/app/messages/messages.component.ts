@@ -13,6 +13,6 @@ export class MessagesComponent {
    * The property is public as you need to bind the property in the template as well as accessing it in the typescript.
    * @param messageService - public property to hold MessageService
    */
-  constructor(public messageService: MessageService) { }
+  constructor(public messageService: MessageService ) { }
 
 }

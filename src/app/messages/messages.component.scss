@@ -1,0 +1,20 @@
+@import "../../assets/styles/base/__base";
+@import "../../assets/styles/elements/__elements";
+
+div {
+  text-align: center;
+
+  h2 {
+    @include section-heading;
+  }
+
+  @include message-button;
+
+  div {
+    margin: 30px 0 50px 0;
+    div {
+      margin: 10px 0 0 0;
+      @include secondary-text;
+    }
+  }
+}

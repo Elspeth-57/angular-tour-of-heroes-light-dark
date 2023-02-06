@@ -17,6 +17,7 @@ export class HeroesComponent implements OnInit {
    * @param heroService - Defines private heroService property and identifies it as a HeroService injection site.
    * Being private means this property cannot be bound to (accessed in) the template, only within this class.
    * @param messageService - Defines private messageService property from MessageService injection.
+   * @param theme - Defines a public theme property that will be accessed in the template.
    */
   constructor(private heroService: HeroService, private messageService: MessageService) {
   }

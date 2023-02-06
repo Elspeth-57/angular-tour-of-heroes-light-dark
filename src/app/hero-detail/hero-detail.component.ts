@@ -15,7 +15,7 @@ export class HeroDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute, // property to hold information about the route to the current component
     private location: Location, // Angular service with interacting with browser
-    private heroService: HeroService // property to hold injected service to get Heroes array in asynchronous way
+    private heroService: HeroService, // property to hold injected service to get Heroes array in asynchronous way
   ) { }
 
   /**

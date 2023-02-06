@@ -1,0 +1,21 @@
+@mixin inputs-with-label {
+  margin: 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  align-items: center;
+  label {
+    @include secondary-text;
+    display: flex;
+    align-items: center;
+  }
+  input {
+    @include secondary-text;
+    width: 20rem;
+    height: 2rem;
+    text-align: center;
+    color: black;
+    border-radius: 15px;
+  }
+}

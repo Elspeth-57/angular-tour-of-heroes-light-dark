@@ -1,0 +1,46 @@
+@mixin theme {
+  :host-context(.light-theme) {
+    // main background
+    --background: #{$cream};
+    // text
+    --text: #{$black};
+    --highlight-text: #{$red};
+
+    // navbar and button colours
+    --navbar-colour: #{$light-green};
+    --nav-button-normal: #{$green};
+
+    // theme button colour
+    --theme-button: #{$peach};
+  }
+
+  :host-context(.dark-theme) {
+    // main background
+    --background: #{$dark-purple};
+    // text
+    --text: #{$white};
+    --highlight-text: #{$red};
+
+    // navbar and button colours
+    --navbar-colour: #{$lilac};
+    --nav-button-normal: #{$purple};
+
+    // theme button colour
+    --theme-button: #{$blue};
+  }
+
+  :host-context(.green-theme) {
+    // main background
+    --background: #{$pale-turquoise};
+    // text
+    --text: #{$black};
+    --highlight-text: #{$red};
+
+    // navbar and button colours
+    --navbar-colour: #{$turquoise};
+    --nav-button-normal: #{$green-blue};
+
+    // theme button colour
+    --theme-button: #{$sandy};
+  }
+}

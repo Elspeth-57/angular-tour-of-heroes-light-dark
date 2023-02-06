@@ -1,22 +1,28 @@
-<h2>My Heroes</h2>
 <!-- template for adding a new hero -->
-<div>
-  <label for="new-hero">Hero name: </label>
-  <input id="new-hero" #heroName />
-  <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
-    Add Hero
-  </button>
-</div>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
 
-<ul class="heroes">
-  <!-- use *ngFor (repeater directive) to loop through a list property (heroes) and access each element (hero) of the list -->
-  <!-- the li element (host element) will be repeated for each item in the list -->
-  <li *ngFor="let hero of heroes">
-    <!-- Each li element contains a link for a hero to the specific hero detail page using the routerLink directive -->
-    <a routerLink="/detail/{{ hero.id }}">
-      <span class="badge">{{ hero.id }}</span> {{ hero.name }}
-    </a>
-    <!-- button to delete the hero -->
-    <button type="button" class="delete" title="delete hero" (click)="delete(hero)">x</button>
-  </li>
-</ul>
+<div>
+  <h2>My Heroes</h2>
+  <div>
+    <label for="new-hero">New Hero Name</label>
+    <input id="new-hero" #heroName />
+    <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
+      <span class="material-symbols-outlined">add</span>
+    </button>
+  </div>
+
+  <ul class="heroes">
+    <!-- use *ngFor (repeater directive) to loop through a list property (heroes) and access each element (hero) of the list -->
+    <!-- the li element (host element) will be repeated for each item in the list -->
+    <li *ngFor="let hero of heroes">
+      <!-- Each li element contains a link for a hero to the specific hero detail page using the routerLink directive -->
+      <a routerLink="/detail/{{ hero.id }}">
+        <span class="badge">{{ hero.id }} -</span> {{ hero.name }}
+      </a>
+      <!-- button to delete the hero -->
+      <button type="button" class="delete" title="delete hero" (click)="delete(hero)">
+        <span class="material-symbols-outlined">delete</span>
+      </button>
+    </li>
+  </ul>
+</div>

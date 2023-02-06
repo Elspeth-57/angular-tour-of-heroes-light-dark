@@ -1,0 +1,43 @@
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+@mixin navbar {
+  @extend .flex-row;
+  justify-content: space-between;
+  background-color: var(--navbar-colour);
+  height: 53px;
+  border-radius: 15px;
+}
+
+@mixin favourite-heroes {
+  @extend .flex-row;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+@mixin search-results {
+  padding-inline-start: 0px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.7rem;
+  list-style-type: none;
+  li {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    a {
+      text-decoration: none;
+      @include secondary-text;
+      margin-right: 1.5rem;
+    }
+    a:hover {
+      color: var(--highlight-text);
+    }
+    @include add-delete-hero;
+  }
+}

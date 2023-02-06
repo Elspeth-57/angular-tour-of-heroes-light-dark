@@ -1,0 +1,13 @@
+@import "../../assets/styles/base/__base";
+@import "../../assets/styles/elements/__elements";
+
+div {
+  h2 {
+    @include section-heading;
+  }
+  .heroes-menu {
+    @include favourite-heroes;
+    @include dashboard-favourites;
+  }
+}
+

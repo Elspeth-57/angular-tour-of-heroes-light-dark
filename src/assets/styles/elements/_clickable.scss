@@ -1,0 +1,105 @@
+.base-button {
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+@mixin navigation-button {
+  a {
+    @extend .base-button;
+    @include button-text;
+    background-color: var(--navbar-colour);
+    color: var(--text);
+    height: auto;
+  }
+  a:hover {
+    @extend .base-button;
+    @include button-text;
+    background-color: var(--nav-button-normal);
+    color: var(--text);
+  }
+  .current-page {
+    @extend .base-button;
+    @include button-text;
+    background-color: var(--nav-button-normal);
+    color: var(--text);
+  }
+}
+
+@mixin dashboard-favourites {
+  a {
+    @extend .base-button;
+    @include button-text;
+    background-color: var(--nav-button-normal);
+    color: var(--text);
+  }
+  a:hover {
+    @extend .base-button;
+    @include button-text;
+    background-color: var(--navbar-colour);
+    color: var(--text);
+  }
+}
+
+@mixin message-button {
+  button {
+    @extend .base-button;
+    @include button-text;
+    background-color: var(--nav-button-normal);
+    color: var(--text);
+  }
+  button:hover {
+    @extend .base-button;
+    @include button-text;
+    background-color: var(--navbar-colour);
+    color: var(--text);
+  }
+}
+
+@mixin add-delete-hero {
+  button {
+    @extend .base-button;
+    @include button-text;
+    display: flex;
+    font-size: 1rem;
+    padding: 7px;
+    background-color: var(--nav-button-normal);
+    color: var(--text);
+  }
+  button:hover {
+    @extend .base-button;
+    @include button-text;
+    display: flex;
+    font-size: 1rem;
+    padding: 7px;
+    background-color: var(--navbar-colour);
+    color: var(--text);
+  }
+}
+
+@mixin theme-button {
+  button {
+    @extend .base-button;
+    @include button-text;
+    border-radius: 0px;
+    padding: 0px 5px;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-button);
+    color: var(--text);
+  }
+  button:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  button:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}

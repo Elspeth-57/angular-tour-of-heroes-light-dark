@@ -10,7 +10,9 @@ import { HeroService } from '../hero.service';
 export class DashboardComponent implements OnInit {
   heroes: Hero[] = []; // create heroes property in the class, it has type array of Hero types
 
-  constructor(private heroService: HeroService) { } // when the class is created, create a private property for the HeroService injection
+  constructor(
+    private heroService: HeroService, // when the class is created, create a private property for the HeroService injection
+  ) { }
 
   ngOnInit(): void { // once the class is created call the getHeroes method within the class
     this.getHeroes();
