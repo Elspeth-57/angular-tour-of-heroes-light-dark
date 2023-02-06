@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ThemeService } from '../theme.service';
+import {Component} from '@angular/core';
+import { themes, ThemeService } from '../theme.service';
 
 @Component({
   selector: 'app-theme-buttons',
@@ -7,21 +7,21 @@ import { ThemeService } from '../theme.service';
   styleUrls: ['./theme-buttons.component.scss']
 })
 export class ThemeButtonsComponent{
-  themeInfo: { name: 'light'|'dark'|'green', icon: string }[] = [
+  themeInfo: { name: themes, icon: string }[] = [
     {
-      name: 'light', icon: 'light_mode'
+      name: themes.light, icon: 'light_mode'
     },
     {
-      name: 'dark', icon: 'dark_mode'
+      name: themes.dark, icon: 'dark_mode'
     },
     {
-      name: 'green', icon: 'beach_access'
+      name: themes.green, icon: 'beach_access'
     }
   ];
 
   constructor(private theme: ThemeService) { }
 
-  onThemeClick(newTheme: 'light'|'dark'|'green'): void {
+  onThemeClick(newTheme: themes): void {
     this.theme.changeTheme(newTheme);
   }
 

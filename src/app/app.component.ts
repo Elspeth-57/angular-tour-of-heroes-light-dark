@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ThemeService } from './theme.service';
+import { themes, ThemeService } from './theme.service';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
 
@@ -9,9 +9,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss'],
   // tslint:disable-next-line:no-host-metadata-property
   host: {
-    '[class.light-theme]': 'this.theme.themeName === "light"',
-    '[class.dark-theme]': 'this.theme.themeName === "dark"',
-    '[class.green-theme]': 'this.theme.themeName === "green"'
+    '[class.light-theme]': 'this.theme.themeName === "LIGHT"',
+    '[class.dark-theme]': 'this.theme.themeName === "DARK"',
+    '[class.green-theme]': 'this.theme.themeName === "GREEN"'
   }
 })
 export class AppComponent implements OnInit{
