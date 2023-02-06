@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
 
 <div>
-  <button *ngFor="let buttonTheme of themeInfo" (click)="toNewTheme(buttonTheme.name)">
+  <button *ngFor="let buttonTheme of themeInfo" (click)="onThemeClick(buttonTheme.name)">
     <span class="material-symbols-outlined">
       {{ buttonTheme.icon }}
     </span>

@@ -21,7 +21,7 @@ export class ThemeButtonsComponent{
 
   constructor(private theme: ThemeService) { }
 
-  toNewTheme(newTheme: 'light'|'dark'|'green'): void {
+  onThemeClick(newTheme: 'light'|'dark'|'green'): void {
     this.theme.changeTheme(newTheme);
   }
 
