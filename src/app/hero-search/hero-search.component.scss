@@ -1,20 +1,10 @@
 @import "../../assets/styles/base/__base";
 @import "../../assets/styles/elements/__elements";
+@import "../../assets/styles/themes/__themes";
 
+@include theme;
 
-div#search-component.light-theme {
-  @import "../../assets/styles/themes/light-theme";
-  @include transition;
-  #search-inputs {
-    @include inputs-with-label;
-  }
-  ul.search-result {
-    @include search-results;
-  }
-}
-
-div#search-component.dark-theme {
-  @import "../../assets/styles/themes/dark-theme";
+#search-component {
   @include transition;
   #search-inputs {
     @include inputs-with-label;

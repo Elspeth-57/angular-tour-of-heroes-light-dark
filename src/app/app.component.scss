@@ -1,43 +1,22 @@
 @import "../assets/styles/base/__base";
 @import "../assets/styles/elements/__elements";
+@import "../assets/styles/themes/__themes";
+
+@include theme;
 
 .material-symbols-outlined {
   padding: 0 5px;
   font-size: 40px;
 }
 
-div.light-theme {
-  @import "../assets/styles/themes/light-theme";
+.app-component {
   @include transition;
   padding: 1rem;
   min-height: 100vh;
   box-sizing: border-box;
   overflow-y: hidden;
-  background-color: $background;
-  color: $text;
-
-  h1 {
-    @include main-page-heading;
-  }
-
-  nav {
-    @include navbar;
-    .nav-buttons {
-      @include navigation-button;
-    }
-    @include theme-button;
-  }
-}
-
-div.dark-theme {
-  @import "../assets/styles/themes/dark-theme";
-  @include transition;
-  padding: 1rem;
-  min-height: 100vh;
-  box-sizing: border-box;
-  overflow-y: hidden;
-  background-color: $background;
-  color: $text;
+  background-color: var(--background);
+  color: var(--text);
 
   h1 {
     @include main-page-heading;

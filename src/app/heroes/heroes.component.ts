@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
 import { MessageService } from '../message.service';
-import { ThemeService } from '../theme.service';
 
 @Component({
   selector: 'app-heroes',
@@ -20,7 +19,7 @@ export class HeroesComponent implements OnInit {
    * @param messageService - Defines private messageService property from MessageService injection.
    * @param theme - Defines a public theme property that will be accessed in the template.
    */
-  constructor(private heroService: HeroService, private messageService: MessageService, public theme: ThemeService) {
+  constructor(private heroService: HeroService, private messageService: MessageService) {
   }
 
   /**

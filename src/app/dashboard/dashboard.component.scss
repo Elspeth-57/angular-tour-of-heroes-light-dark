@@ -1,8 +1,10 @@
 @import "../../assets/styles/base/__base";
 @import "../../assets/styles/elements/__elements";
+@import "../../assets/styles/themes/__themes";
 
-div.light-theme {
-  @import "../../assets/styles/themes/light-theme";
+@include theme;
+
+div {
   @include transition;
   h2 {
     @include section-heading;
@@ -13,14 +15,3 @@ div.light-theme {
   }
 }
 
-div.dark-theme {
-  @import "../../assets/styles/themes/dark-theme";
-  @include transition;
-  h2 {
-    @include section-heading;
-  }
-  .heroes-menu {
-    @include favourite-heroes;
-    @include dashboard-favourites;
-  }
-}

@@ -1,27 +1,14 @@
 @import "../../assets/styles/base/__base";
 @import "../../assets/styles/elements/__elements";
+@import "../../assets/styles/themes/__themes";
+
+@include theme;
 
 .material-symbols-outlined {
   font-size: 18px;
 }
 
-div.light-theme {
-  @import "../../assets/styles/themes/light-theme";
-  @include transition;
-  h2 {
-    @include section-heading;
-  }
-  div {
-    @include inputs-with-label;
-    @include add-delete-hero;
-  }
-  ul.heroes {
-    @include search-results;
-  }
-}
-
-div.dark-theme {
-  @import "../../assets/styles/themes/dark-theme";
+div {
   @include transition;
   h2 {
     @include section-heading;

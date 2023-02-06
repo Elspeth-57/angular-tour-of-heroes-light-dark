@@ -7,7 +7,7 @@
 @mixin navbar {
   @extend .flex-row;
   justify-content: space-between;
-  background-color: $navbar-colour;
+  background-color: var(--navbar-colour);
   height: 53px;
   border-radius: 15px;
 }
@@ -36,7 +36,7 @@
       margin-right: 1.5rem;
     }
     a:hover {
-      color: $highlight-text;
+      color: var(--highlight-text);
     }
     @include add-delete-hero;
   }

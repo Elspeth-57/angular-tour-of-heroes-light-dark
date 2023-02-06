@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
-import { ThemeService } from '../theme.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -13,7 +12,6 @@ export class DashboardComponent implements OnInit {
 
   constructor(
     private heroService: HeroService, // when the class is created, create a private property for the HeroService injection
-    public theme: ThemeService,
   ) { }
 
   ngOnInit(): void { // once the class is created call the getHeroes method within the class

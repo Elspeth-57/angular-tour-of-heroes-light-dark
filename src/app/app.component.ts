@@ -6,7 +6,12 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  // tslint:disable-next-line:no-host-metadata-property
+  host: {
+    '[class.light-theme]': '!this.theme.darkTheme',
+    '[class.dark-theme]': 'this.theme.darkTheme'
+  }
 })
 export class AppComponent implements OnInit{
   title = 'Tour of Heroes';

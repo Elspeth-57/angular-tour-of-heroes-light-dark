@@ -11,20 +11,21 @@
   a {
     @extend .base-button;
     @include button-text;
-    background-color: $navbar-colour;
-    color: map-get($colour-matches, $navbar-colour);
+    background-color: var(--navbar-colour);
+    color: var(--text);
+    height: auto;
   }
   a:hover {
     @extend .base-button;
     @include button-text;
-    background-color: $nav-button-normal;
-    color: map-get($colour-matches, $nav-button-normal);
+    background-color: var(--nav-button-normal);
+    color: var(--text);
   }
   .current-page {
     @extend .base-button;
     @include button-text;
-    background-color: $nav-button-normal;
-    color: map-get($colour-matches, $nav-button-normal);
+    background-color: var(--nav-button-normal);
+    color: var(--text);
   }
 }
 
@@ -32,14 +33,14 @@
   a {
     @extend .base-button;
     @include button-text;
-    background-color: $nav-button-normal;
-    color: map-get($colour-matches, $nav-button-normal);
+    background-color: var(--nav-button-normal);
+    color: var(--text);
   }
   a:hover {
     @extend .base-button;
     @include button-text;
-    background-color: $navbar-colour;
-    color: map-get($colour-matches, $navbar-colour);
+    background-color: var(--navbar-colour);
+    color: var(--text);
   }
 }
 
@@ -47,14 +48,14 @@
   button {
     @extend .base-button;
     @include button-text;
-    background-color: $nav-button-normal;
-    color: map-get($colour-matches, $nav-button-normal);
+    background-color: var(--nav-button-normal);
+    color: var(--text);
   }
   button:hover {
     @extend .base-button;
     @include button-text;
-    background-color: $navbar-colour;
-    color: map-get($colour-matches, $navbar-colour);
+    background-color: var(--navbar-colour);
+    color: var(--text);
   }
 }
 
@@ -65,8 +66,8 @@
     display: flex;
     font-size: 1rem;
     padding: 7px;
-    background-color: $nav-button-normal;
-    color: map-get($colour-matches, $nav-button-normal);
+    background-color: var(--nav-button-normal);
+    color: var(--text);
   }
   button:hover {
     @extend .base-button;
@@ -74,8 +75,8 @@
     display: flex;
     font-size: 1rem;
     padding: 7px;
-    background-color: $navbar-colour;
-    color: map-get($colour-matches, $navbar-colour);
+    background-color: var(--navbar-colour);
+    color: var(--text);
   }
 }
 
@@ -88,7 +89,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $theme-button;
-    color: map-get($colour-matches, $theme-button);
+    background-color: var(--theme-button);
+    color: var(--text);
   }
 }

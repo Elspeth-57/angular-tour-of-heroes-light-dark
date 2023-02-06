@@ -1,0 +1,41 @@
+@mixin theme {
+  :host-context(.light-theme) {
+    // main background
+    --background: #{$cream};
+    // text
+    --text: #{$black};
+    --highlight-text: #{$red};
+
+    // navbar and button colours
+    --navbar-colour: #{$light-green};
+    --nav-button-normal: #{$green};
+
+    // theme button colour
+    --theme-button: #{$peach};
+
+    // transition time when changing theme
+    @include transition;
+
+  }
+  :host-context(.dark-theme) {
+    // main background
+    --background: #{$dark-purple};
+    // text
+    --text: #{$white};
+    --highlight-text: #{$red};
+
+    // navbar and button colours
+    --navbar-colour: #{$lilac};
+    --nav-button-normal: #{$purple};
+
+    // theme button colour
+    --theme-button: #{$blue};
+
+    // transition time when changing theme
+    @include transition;
+  }
+}
+
+@mixin transition {
+  transition: 0.5s linear;
+}
