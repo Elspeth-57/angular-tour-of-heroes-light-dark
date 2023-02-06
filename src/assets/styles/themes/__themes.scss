@@ -12,11 +12,8 @@
 
     // theme button colour
     --theme-button: #{$peach};
-
-    // transition time when changing theme
-    @include transition;
-
   }
+
   :host-context(.dark-theme) {
     // main background
     --background: #{$dark-purple};
@@ -30,12 +27,5 @@
 
     // theme button colour
     --theme-button: #{$blue};
-
-    // transition time when changing theme
-    @include transition;
   }
-}
-
-@mixin transition {
-  transition: 0.5s linear;
 }

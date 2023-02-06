@@ -10,7 +10,6 @@
 }
 
 .app-component {
-  @include transition;
   padding: 1rem;
   min-height: 100vh;
   box-sizing: border-box;

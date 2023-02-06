@@ -1,11 +1,7 @@
 @import "../../assets/styles/base/__base";
 @import "../../assets/styles/elements/__elements";
-@import "../../assets/styles/themes/__themes";
-
-@include theme;
 
 div {
-  @include transition;
   h2 {
     @include section-heading;
   }
