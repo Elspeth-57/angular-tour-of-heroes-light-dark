@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Hero } from './hero';
+import { Hero } from '../../../models/hero.enum';
 import { Observable, of } from 'rxjs';
-import { MessageService } from './message.service';
+import { MessageService } from '../MessageService/message.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, tap } from 'rxjs/operators';
 

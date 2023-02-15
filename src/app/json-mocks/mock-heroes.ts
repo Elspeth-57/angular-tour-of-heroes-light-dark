@@ -1,4 +1,4 @@
-import { Hero } from './hero';
+import { Hero } from '../models/hero.enum';
 
 // create a constant HEROES which is an array of objects each with the Hero interface
 export const HEROES: Hero[] = [

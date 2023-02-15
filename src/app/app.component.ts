@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { themes, ThemeService } from './theme.service';
+import { themes, ThemeService } from './core/services/ThemeService/theme.service';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
 
